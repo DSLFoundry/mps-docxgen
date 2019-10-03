@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.docx/com.dslfoundry.docx.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.docx/runtime/com.dslfoundry.docx.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.docx/sandbox/com.dslfoundry.docx.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.oce.KISS.L2.gen.docx/sandbox/com.oce.KISS.L2.gen.docx.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.docx4j.tests/org.docx4j.tests.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.docx4j/org.docx4j.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
