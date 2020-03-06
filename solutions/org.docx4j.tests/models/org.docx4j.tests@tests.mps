@@ -30,13 +30,6 @@
     <import index="vgdk" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:org.docx4j.wml(org.docx4j/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="s1v1" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:org.docx4j.openpackaging.parts.WordprocessingML(org.docx4j/)" />
-    <import index="oqcp" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio(JDK/)" />
-    <import index="mycb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio.plugins.jpeg(JDK/)" />
-    <import index="59d1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio.stream(JDK/)" />
-    <import index="u505" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio.event(JDK/)" />
-    <import index="3gyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio.spi(JDK/)" />
-    <import index="wums" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio.metadata(JDK/)" />
-    <import index="qj3m" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio.plugins.bmp(JDK/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -228,7 +221,7 @@
     </language>
   </registry>
   <node concept="2XOHcx" id="62GcVm6vae1">
-    <property role="2XOHcw" value="${mps-docxgen-root}" />
+    <property role="2XOHcw" value="${mps-docxgen}" />
   </node>
   <node concept="1lH9Xt" id="62GcVm6vae2">
     <property role="TrG5h" value="SampleCode" />
@@ -236,6 +229,66 @@
       <property role="TrG5h" value="x1_Basic" />
       <node concept="3cqZAl" id="62GcVm6vaem" role="3clF45" />
       <node concept="3clFbS" id="62GcVm6vaeq" role="3clF47">
+        <node concept="3SKdUt" id="4zGUHraWc5E" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWc5G" role="3SKWNk">
+            <property role="3SKdUp" value="this test depends on" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraWgw_" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWgwA" role="3SKWNk">
+            <property role="3SKdUp" value="org.docx4j.packaging.packages" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraWyXx" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWyXz" role="3SKWNk">
+            <property role="3SKdUp" value="- WordprocessingMLPackage" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraWjFm" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWjFn" role="3SKWNk">
+            <property role="3SKdUp" value="org.docx4j.openpackaging.parts.WordprocessingML " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraW$RF" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraW$RH" role="3SKWNk">
+            <property role="3SKdUp" value="- MainDocumentPart" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraWA$W" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWA$Y" role="3SKWNk">
+            <property role="3SKdUp" value="java.io" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraWBKl" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWBKn" role="3SKWNk">
+            <property role="3SKdUp" value="- File" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraWDF1" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWDF3" role="3SKWNk">
+            <property role="3SKdUp" value="for some reason the following jars had to be included at the module level of this model" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraWI1a" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWI1b" role="3SKWNk">
+            <property role="3SKdUp" value="(using the Java TAB / import as classes) " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraWGkF" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWGkH" role="3SKWNk">
+            <property role="3SKdUp" value="- docx4j.jar -- I would have expected this to be covered by importing the org.docx4j solution" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraWQA_" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWQAB" role="3SKWNk">
+            <property role="3SKdUp" value="- commons.io.jar -- not sure if there is a relation with java.io" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraWU02" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWU04" role="3SKWNk">
+            <property role="3SKdUp" value="- xalan.jar (version 2.6.2) -- I expected this to work when in the org.docx4j solution but that failed" />
+          </node>
+        </node>
         <node concept="SfApY" id="5bw_t6Wi$gR" role="3cqZAp">
           <node concept="3clFbS" id="5bw_t6Wi$gT" role="SfCbr">
             <node concept="3cpWs8" id="62GcVm6vaNe" role="3cqZAp">
@@ -305,7 +358,7 @@
                   <node concept="1pGfFk" id="5bw_t6WlFNQ" role="2ShVmc">
                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                     <node concept="Xl_RD" id="5bw_t6WlFNR" role="37wK5m">
-                      <property role="Xl_RC" value="C:/tmp/x1-basic.docx" />
+                      <property role="Xl_RC" value="C:/temp/org.docx4j/x1-basic.docx" />
                     </node>
                   </node>
                 </node>
@@ -358,6 +411,31 @@
       <property role="TrG5h" value="x2_Styles" />
       <node concept="3cqZAl" id="4zGUHraVwL9" role="3clF45" />
       <node concept="3clFbS" id="4zGUHraVwLd" role="3clF47">
+        <node concept="3SKdUt" id="4zGUHraW3Uo" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraW3Uq" role="3SKWNk">
+            <property role="3SKdUp" value="this test additionally depends on models" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraW7J$" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraW7J_" role="3SKWNk">
+            <property role="3SKdUp" value="org.docx4j.jaxb" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraWqz2" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWqz3" role="3SKWNk">
+            <property role="3SKdUp" value="- Context " />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraW5OX" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraW5OY" role="3SKWNk">
+            <property role="3SKdUp" value="org.docx4j.wml" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4zGUHraWsTS" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraWsTU" role="3SKWNk">
+            <property role="3SKdUp" value="- ObjectFactory" />
+          </node>
+        </node>
         <node concept="SfApY" id="4zGUHraVxaR" role="3cqZAp">
           <node concept="3clFbS" id="4zGUHraVxaS" role="SfCbr">
             <node concept="3cpWs8" id="4zGUHraVN2d" role="3cqZAp">
@@ -648,7 +726,7 @@
                   <node concept="1pGfFk" id="4zGUHraVIis" role="2ShVmc">
                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                     <node concept="Xl_RD" id="4zGUHraVIit" role="37wK5m">
-                      <property role="Xl_RC" value="C:/tmp/x2-style.docx" />
+                      <property role="Xl_RC" value="C:/temp/docx/x2-style.docx" />
                     </node>
                   </node>
                 </node>
@@ -700,6 +778,11 @@
       <property role="TrG5h" value="x3_Image" />
       <node concept="3cqZAl" id="4zGUHraW1zL" role="3clF45" />
       <node concept="3clFbS" id="4zGUHraW1zP" role="3clF47">
+        <node concept="3SKdUt" id="4zGUHraXdzr" role="3cqZAp">
+          <node concept="3SKdUq" id="4zGUHraXdzt" role="3SKWNk">
+            <property role="3SKdUp" value="org.docx4j.dml.wordprocessingDrawing.Inline" />
+          </node>
+        </node>
         <node concept="SfApY" id="4zGUHraW2IF" role="3cqZAp">
           <node concept="3clFbS" id="4zGUHraW2IG" role="SfCbr">
             <node concept="3cpWs8" id="4zGUHraXicS" role="3cqZAp">
@@ -770,7 +853,7 @@
                   <node concept="1pGfFk" id="4zGUHraXmrz" role="2ShVmc">
                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                     <node concept="Xl_RD" id="4zGUHraXmr$" role="37wK5m">
-                      <property role="Xl_RC" value="C:/tmp/diamond.jpg" />
+                      <property role="Xl_RC" value="C:/temp/docx/diamond.jpg" />
                     </node>
                   </node>
                 </node>
@@ -887,7 +970,7 @@
                   <node concept="1pGfFk" id="4zGUHraXidh" role="2ShVmc">
                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                     <node concept="Xl_RD" id="4zGUHraXidi" role="37wK5m">
-                      <property role="Xl_RC" value="C:/tmp/x3-image.docx" />
+                      <property role="Xl_RC" value="C:/temp/docx/x3-image.docx" />
                     </node>
                   </node>
                 </node>
@@ -1606,7 +1689,7 @@
                   <node concept="1pGfFk" id="5DN9oCMoiDy" role="2ShVmc">
                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                     <node concept="Xl_RD" id="5DN9oCMptpo" role="37wK5m">
-                      <property role="Xl_RC" value="C:/tmp/x4-table.docx" />
+                      <property role="Xl_RC" value="C:/temp/docx/x4-table.docx" />
                     </node>
                   </node>
                 </node>
@@ -1684,7 +1767,7 @@
                   <node concept="1pGfFk" id="5DN9oCMshSV" role="2ShVmc">
                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                     <node concept="Xl_RD" id="5DN9oCMsimA" role="37wK5m">
-                      <property role="Xl_RC" value="C:/tmp/template.docx" />
+                      <property role="Xl_RC" value="C:/temp/docx/template.docx" />
                     </node>
                   </node>
                 </node>
@@ -1869,7 +1952,7 @@
                   <node concept="1pGfFk" id="5DN9oCMt8Hy" role="2ShVmc">
                     <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                     <node concept="Xl_RD" id="5DN9oCMt8Hz" role="37wK5m">
-                      <property role="Xl_RC" value="C:/tmp/x6-copy-styles.docx" />
+                      <property role="Xl_RC" value="C:/temp/docx/x6-copy-styles.docx" />
                     </node>
                   </node>
                 </node>
@@ -2228,57 +2311,6 @@
     <node concept="2YIFZL" id="5M2Ta17H6cU" role="jymVt">
       <property role="TrG5h" value="main" />
       <node concept="3clFbS" id="5M2Ta17H6cX" role="3clF47">
-        <node concept="3clFbF" id="5M2Ta17H9G8" role="3cqZAp">
-          <node concept="2OqwBi" id="5M2Ta17Ha5a" role="3clFbG">
-            <node concept="10M0yZ" id="5M2Ta17H9VG" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="5M2Ta17Hc74" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="Xl_RD" id="5M2Ta17Hcf8" role="37wK5m">
-                <property role="Xl_RC" value="hello" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5M2Ta17Hpdi" role="3cqZAp">
-          <node concept="2OqwBi" id="5M2Ta17Hpdj" role="3clFbG">
-            <node concept="10M0yZ" id="5M2Ta17Hpdk" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="5M2Ta17Hpdl" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="2YIFZM" id="5M2Ta17HsPR" role="37wK5m">
-                <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                <ref role="37wK5l" to="wyt6:~System.getenv(java.lang.String)" resolve="getenv" />
-                <node concept="Xl_RD" id="5M2Ta17Htiv" role="37wK5m">
-                  <property role="Xl_RC" value="Path" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5M2Ta17HvF6" role="3cqZAp">
-          <node concept="2OqwBi" id="5M2Ta17HvF7" role="3clFbG">
-            <node concept="10M0yZ" id="5M2Ta17HvF8" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="5M2Ta17HvF9" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-              <node concept="2YIFZM" id="5M2Ta17H$3Y" role="37wK5m">
-                <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
-                <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                <node concept="Xl_RD" id="5M2Ta17H$3Z" role="37wK5m">
-                  <property role="Xl_RC" value="java.class.path" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="5M2Ta17HvyX" role="3cqZAp" />
         <node concept="3clFbH" id="5M2Ta17HpcE" role="3cqZAp" />
         <node concept="SfApY" id="5M2Ta17Hl$n" role="3cqZAp">
           <node concept="3clFbS" id="5M2Ta17Hl$o" role="SfCbr">
@@ -2360,7 +2392,7 @@
               <ref role="3uigEE" to="wyt6:~String" resolve="String" />
             </node>
             <node concept="Xl_RD" id="5DN9oCMrrq3" role="33vP2m">
-              <property role="Xl_RC" value="C:/tmp/x5-hyperlink.docx" />
+              <property role="Xl_RC" value="C:/temp/docx4j/xx5-hyperlink.docx" />
             </node>
           </node>
         </node>

@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="hgfn" ref="r:9742a092-2a39-4a23-b1f7-4e446da4d386(com.dslfoundry.docx.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -76,7 +77,25 @@
     <node concept="3EZMnI" id="2RpYLN7fNJo" role="2wV5jI">
       <node concept="l2Vlx" id="2RpYLN7fNJp" role="2iSdaV" />
       <node concept="3F0ifn" id="2RpYLN7fNJq" role="3EZMnx">
-        <property role="3F0ifm" value="docx document" />
+        <property role="3F0ifm" value="Document:" />
+      </node>
+      <node concept="3F0A7n" id="2Othy1h6abb" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2QPHU78fGFQ" role="3EZMnx">
+        <property role="3F0ifm" value=".docx" />
+        <node concept="11L4FC" id="2QPHU78fGG6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="2QPHU78fGGb" role="3F10Kt">
+          <property role="Vb096" value="gray" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2QPHU78fsev" role="3EZMnx">
+        <property role="3F0ifm" value="with Template:" />
+      </node>
+      <node concept="3F1sOY" id="2QPHU78fseV" role="3EZMnx">
+        <ref role="1NtTu8" to="hgfn:2QPHU78fsef" resolve="template" />
       </node>
       <node concept="3F0ifn" id="2RpYLN7fNJr" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -250,6 +269,24 @@
         </node>
         <node concept="lj46D" id="2OLty_folsU" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2QPHU78fIWN">
+    <ref role="1XX52x" to="hgfn:2QPHU78fsec" resolve="DocxTemplate" />
+    <node concept="3EZMnI" id="2QPHU78fIWP" role="2wV5jI">
+      <node concept="l2Vlx" id="2QPHU78fIWQ" role="2iSdaV" />
+      <node concept="3F0A7n" id="2QPHU78fIWS" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2QPHU78fIWT" role="3EZMnx">
+        <property role="3F0ifm" value=".docx" />
+        <node concept="11L4FC" id="2QPHU78fIWU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="2QPHU78fIXu" role="3F10Kt">
+          <property role="Vb096" value="gray" />
         </node>
       </node>
     </node>

@@ -85,9 +85,6 @@
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="b5d6b482-6a56-49a4-b0f2-664334ce8729(org.docx4j)" version="0" />
   </dependencyVersions>
-  <runtime>
-    <dependency reexport="false">a810700d-b9bb-4a66-8044-ec8fef3116da(com.dslfoundry.docx.runtime)</dependency>
-  </runtime>
   <extendedLanguages />
 </language>
 

@@ -1,6 +1,6 @@
 # mps-docxgen
 
-#### Contents
+### Contents
 
 Language `com.dslfoundry.com`:
 Generation target language for creating .docx files from MPS.
@@ -23,4 +23,81 @@ Wrapping these jars and samples was for the most part a textbook exercise in MPS
 This is documented here: <TODO: publish article on dslfoundry.com>
 
 This repository is made using MPS version 2019.1.1
+
+### File & Path dependencies
+
+There are a number of folders and files that are not part of tthe MPS project that need to be present for the code to run.
+We list them here.
+
+#### org.docx4j
+depends on these files
+- docx4j-community-8.1.3/resources
+
+#### org.docx4j.samples
+
+Samples as downloaded from docx4j.org rely on the property "user.dir"
+which typically points to the directory from which the process was started.
+When running the samples from within MPS, "user.dir" points to the bin folder from your MPS install.
+This is not where you want to have your temporary files (at least I don't).
+
+One way of dealing with this is to set "user.dir" to another value yourself.
+This can be done in more than one way
+
+- from the JVM command line
+
+in a run configuration, in the field "..." add `-Duser.dir="somepath"`
+
+- from the sample code
+
+`System.setProperty("user.dir", "C:/temp/org.docx4j");`
+
+I have added a static method to AbstractExample that does this for you:
+`AbstractSample.setUserDir();`
+In this way there is only one place to edit if you change your mind about the path.
+
+copy over the folder `sample-docs` from the zip to the `user.dir` folder
+
+### org.docx4j.tests
+
+
+### com.dslfoundry.docx.samples.tests
+
+actual = where the docx generator writes its output
+- absolute path to fixture solution `com.dslfoundry.docx.samples`
+- `"docx_gen"`
+- `<name of model under test>`
+- `<name of root node>.docx`
+
+expected = where we keep the reference
+- absolute path to test solution `com.dslfoundry.docx.samples.tests`
+- `"expectations"`
+- `<name of model under test>`
+- `<name of root node>.docx`
+
+Therre are helper methods to build these paths.
+These helper methods rely on these classes
+- java.io.File
+- java.nio.file.Files
+- java.nio.file.Path
+- java.nio.file.Paths
+
+
+### Templates
+
+When defining a .docx file you may specify a template file.
+The template file may be any .docx file that you have prepared and stored in the templates folder (see below).
+When generation starts, the template file serves as a starting point
+- all settings of the template file are carried over
+- all style definitions of the template file are carried over
+- all content in the template file is copied over
+
+The template file must be put in a folder named 'templates' in the same solution
+that contains the DocxDocument node serving as input to the generator.
+In this way you can have different templates for different solutions.
+
+If the generator cannot find the template, it proceeds without a template.
+TODO: it proceeds with a template stored in the generator module (default template)
+
+
+
 

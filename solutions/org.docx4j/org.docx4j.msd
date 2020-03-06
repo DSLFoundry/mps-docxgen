@@ -22,8 +22,6 @@
     <stubModelEntry path="${module}/docx4j-community-8.1.3/dependencies/jaxb-svg11-1.0.2.jar" />
     <stubModelEntry path="${module}/docx4j-community-8.1.3/dependencies/jcl-over-slf4j-1.7.26.jar" />
     <stubModelEntry path="${module}/docx4j-community-8.1.3/dependencies/mbassador-1.3.2.jar" />
-    <stubModelEntry path="${module}/docx4j-community-8.1.3/dependencies/slf4j-api-1.7.10.jar" />
-    <stubModelEntry path="${module}/docx4j-community-8.1.3/dependencies/slf4j-log4j12-1.7.10.jar" />
     <stubModelEntry path="${module}/docx4j-community-8.1.3/dependencies/stringtemplate-3.2.1.jar" />
     <stubModelEntry path="${module}/docx4j-community-8.1.3/dependencies/wmf2svg-0.9.8.jar" />
     <stubModelEntry path="${module}/docx4j-community-8.1.3/dependencies/xalan-interpretive-8.0.0.jar" />
@@ -71,6 +69,8 @@
     <stubModelEntry path="${module}/docx4j-community-8.1.3/docx4j-openxml-objects-8.1.3.jar" />
     <stubModelEntry path="${module}/docx4j-community-8.1.3/docx4j-openxml-objects-pml-8.1.3.jar" />
     <stubModelEntry path="${module}/docx4j-community-8.1.3/docx4j-openxml-objects-sml-8.1.3.jar" />
+    <stubModelEntry path="${module}/docx4j-community-8.1.3/dependencies/slf4j-api-1.7.25.jar" />
+    <stubModelEntry path="${module}/docx4j-community-8.1.3/dependencies/slf4j-log4j12-1.7.25.jar" />
   </stubModelEntries>
   <sourcePath>
     <source path="${module}/docx4j-community-8.1.3/resources" />

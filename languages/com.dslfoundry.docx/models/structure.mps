@@ -56,8 +56,24 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4sixqEheiIX" resolve="DocxParagraphCollection" />
     </node>
+    <node concept="1TJgyj" id="2QPHU78fsef" role="1TKVEi">
+      <property role="IQ2ns" value="3293740607968494479" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="template" />
+      <ref role="20lvS9" node="2QPHU78fsec" resolve="DocxTemplate" />
+    </node>
     <node concept="PrWs8" id="3ITti2R6C26" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="2QPHU78qYrB" role="1TKVEl">
+      <property role="IQ2nx" value="3293740607971518183" />
+      <property role="TrG5h" value="outputPath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2QPHU78qYJW" role="1TKVEl">
+      <property role="IQ2nx" value="3293740607971519484" />
+      <property role="TrG5h" value="templatePath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="2RpYLN7f$Tk">
@@ -160,6 +176,14 @@
       <property role="20kJfa" value="paragraphs" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4sixqEheiIT" resolve="IDocxParagraphs" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2QPHU78fsec">
+    <property role="EcuMT" value="3293740607968494476" />
+    <property role="TrG5h" value="DocxTemplate" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2QPHU78fsed" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
