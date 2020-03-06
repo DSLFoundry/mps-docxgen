@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+  <appender name="FILE" class="org.apache.log4j.RollingFileAppender">
+      <param name="MaxFileSize" value="1Mb"/>
+      <param name="MaxBackupIndex" value="3"/>
+      <param name="file" value="C:/temp/org.docx4j/samples.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value="%d [%7r] %6p - %c - %m %n"/>
+      </layout>
+  </appender>
+
+  <root>
+    <priority value="TRACE"/>
+    <appender-ref ref="FILE"/>
+  </root>
+  
+</log4j:configuration>

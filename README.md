@@ -32,6 +32,13 @@ We list them here.
 #### org.docx4j
 depends on these files
 - docx4j-community-8.1.3/resources
+- C:/temp/org.docx4j/samples.log
+
+the log file is set in the log.xml file in
+
+`D:\git\GitHub\DSLFoundry\mps-docxgen\solutions\org.docx4j\docx4j-community-8.1.3\resources`
+
+TODO think of a place inside the project
 
 #### org.docx4j.samples
 
