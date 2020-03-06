@@ -5,9 +5,9 @@
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.docx/com.dslfoundry.docx.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.docx.samples.tests/com.dslfoundry.docx.samples.tests.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.docx.samples/com.dslfoundry.docx.samples.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.docx4j.samples/org.docx4j.samples.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.docx4j.tests/org.docx4j.tests.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.docx4j/org.docx4j.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.docx4j.samples/org.docx4j.samples.msd" folder="org.docx4j" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.docx4j.tests/org.docx4j.tests.msd" folder="org.docx4j" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.docx4j/org.docx4j.msd" folder="org.docx4j" />
     </projectModules>
   </component>
 </project>
