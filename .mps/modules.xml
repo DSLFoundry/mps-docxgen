@@ -8,6 +8,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.docx4j.samples/org.docx4j.samples.msd" folder="org.docx4j" />
       <modulePath path="$PROJECT_DIR$/solutions/org.docx4j.tests/org.docx4j.tests.msd" folder="org.docx4j" />
       <modulePath path="$PROJECT_DIR$/solutions/org.docx4j/org.docx4j.msd" folder="org.docx4j" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.xmlunit.tests/org.xmlunit.tests.msd" folder="org.xmlunit" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.xmlunit/org.xmlunit.msd" folder="org.xmlunit" />
     </projectModules>
   </component>
 </project>

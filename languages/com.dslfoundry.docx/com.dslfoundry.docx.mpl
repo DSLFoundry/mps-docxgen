@@ -39,7 +39,6 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="7850b982-0ec2-45d4-8e0f-ee23786dc16a(com.dslfoundry.docx)" version="0" />
         <module reference="c92d33f3-e836-4f49-8291-36d260039976(com.dslfoundry.docx#01)" version="0" />
-        <module reference="a810700d-b9bb-4a66-8044-ec8fef3116da(com.dslfoundry.docx.runtime)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
