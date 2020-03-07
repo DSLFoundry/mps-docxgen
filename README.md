@@ -167,6 +167,11 @@ This can be done in more than one way:
   so there is only one place to edit if you change your mind about the path.
   As configured now, it points to folder `C:/temp/org.docx4j`
 
+##### org.docx4j.samples
+
+Ignore.
+This solution contains a few experiments that may be removed later.
+
 ##### org.xmlunit
 
 This solution is a wrapper for the xmlunit binaries (MPS @java_stub models)
