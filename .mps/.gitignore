@@ -1,0 +1,3 @@
+# ignore of config files of MPS plugins
+/markdown-navigator.xml
+/markdown-navigator-enh.xml
