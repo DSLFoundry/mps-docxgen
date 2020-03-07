@@ -16,7 +16,8 @@ You find examples in the c.d.docx.samples solution.
 
 You may specify a template document which is a regular .docx file
 For each generator run, the template document is copied and filled with the output from the generator.
-In this way you can create styles and standard content without coding.
+In this way you can create styles and set document properties without coding.
+You may even add standard content like headers & footers.
 
 #### Status
 
@@ -146,7 +147,7 @@ but it took a few hours of manual editing, because of a number of issues in past
 - generic types (the resulting AST is wrong in a very weird way)
 
 This caused many unresolved references and missing nodes, which took a lot of manual work to fix.
-TODO: file bug reports with JetBrans.
+TODO: file bug reports with JetBrains.
 
 Many samples require one or more files as input.
 These samples are provided in
