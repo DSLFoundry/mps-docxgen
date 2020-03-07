@@ -114,7 +114,7 @@ All steps to reproduce this solution are documented here: <TODO: publish article
 
 The docx4j jars write log info using log4j using this config file:
 `${mps-docxgen}\solutions\org.docx4j\docx4j-community-8.1.3\resources\log.xml`
-As configured now, it writes to a log file `C:/temp/org.docx4j/samples.log`.
+As configured now, it writes to a log file `C:\temp\org.docx4j\samples.log`.
 You may want to change that.
 This [article](http://dslfoundry.com/using-apache-chainsaw-to-view-the-mps-log/) on logging configurations may be hepful.
 
@@ -156,16 +156,15 @@ This is not where you want to have your files written (at least I don't).
 One way of dealing with this is to set "user.dir" to another value yourself.
 This can be done in more than one way:
 
-- from the JVM command line: in an MPS run configuration, in the field "..." add `-Duser.dir="C:/temp/org.docx4j"`
+- edit the MPS run configuration:
+  in the field "Working Directory" enter "C:\temp\org.docx4j".
+  You may want to do this for all samples, by editing the Run Configuration Template for Java Application.
 
-- from the sample code:
-  `System.setProperty("user.dir", "C:/temp/org.docx4j");`
-
-- from the sample code:
+- edit the sample code:
   `AbstractSample.setUserDir();`
   I have added setUserDir as a static method to AbstractExample
   so there is only one place to edit if you change your mind about the path.
-  As configured now, it points to folder `C:/temp/org.docx4j`
+  As configured now, it points to folder `C:\temp\org.docx4j`
 
 ##### org.docx4j.samples
 
