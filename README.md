@@ -87,6 +87,7 @@ but having a few of them is helpful to see if nothing major is broken.
 To run these tests you have to set the path variable ${mps-docxgen} to the root of the project.
 
 To locate the actual and expected output, here are the path name conventions:
+(TODO: remove hard coded absolute paths to the solutions)
 
 actual = where the docx generator writes its output (not under version control)
 - absolute path to fixture solution `com.dslfoundry.docx.samples`
@@ -101,13 +102,11 @@ expected = where we keep the reference (under version control)
 - `<name of root node>.docx`
 
 There are helper methods to build these paths.
-These helper methods rely on these classes
+These helper methods rely on these classes (which are all included in JDK)
 - java.io.File
 - java.nio.file.Files
 - java.nio.file.Path
 - java.nio.file.Paths
-
-(TODO: check if they are part of the MPS base distribution -- they are in our internal distro)
 
 #### org.docx4j
 
