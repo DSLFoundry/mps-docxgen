@@ -14,11 +14,15 @@ The com.dslfoundry.docx language includes custom editors that should make life s
 when defining templates and reduction rules.
 You find examples in the c.d.docx.samples solution.
 
-##### Status
+You may specify a template document which is a regular .docx file
+For each generator run, the template document is copied and filled with the output from the generator.
+In this way you can create styles and standard content without coding.
+
+#### Status
 
 This is very much a work in progress.
-The concepts presently adopted from the WordProcessingML standard work pretty well,
-it is just that this set is rather limited today.
+The the set of concepts presently adopted from the WordProcessingML standard is rather small,
+but the ones adopted work pretty well.
 It is not the intention to provide each and every piece of functionality of the standard in this language.
 Development is "on demand", implementing only what is needed for client projects.
 Contributions welcome!
@@ -42,17 +46,20 @@ When invoking this generator on a model in your source language, this happens:
    On each node in the descent, calls are made to docx4j to do the writing to the .docx file.
    You find these calls in the behavior aspect of the concepts in c.d.docx.
    After the descent, the c.d.docx root node is just dropped, thus completing the generation process.
+   
+NB. a first run of the generator may take well over a minute, heating up the JVM.
+Subsequent runs are much faster, more like 1 second.
 
-##### Templates
+#### Templates
 
 When defining a generator targeting com.dslfoundry.docx, you may specify a template file.
 The template file may be any .docx file that you have prepared and stored in the templates folder (see below).
 When generation starts, the template file serves as a starting point
-- all settings of the template file are carried over
-- all style definitions of the template file are carried over
+- all settings of the template file are copied over
+- all style definitions of the template file are copied over
 - all content in the template file is copied over
 
-The generator looks for the template file in a folder named 'templates'
+The generator looks for the template file in a folder named 'templates.docx'
 in the same solution that contains the DocxDocument root node you want to generate from.
 In this way you can have different templates for different solutions.
 
@@ -62,15 +69,15 @@ TODO: it proceeds with a template stored in the generator module (default templa
 
 ## Details & Dependencies
 
-##### com.dslfoundry.docx
+#### com.dslfoundry.docx
 
 This language serves as a generation target for creating .docx files from MPS.
 
-##### com.dslfoundry.docx.samples
+#### com.dslfoundry.docx.samples
 
 This solution provides some samples of how to use the language.
 
-##### com.dslfoundry.docx.samples.tests
+#### com.dslfoundry.docx.samples.tests
 
 This solution invokes the generator on the samples
 and compares the actual generator output with the expected output (a reference file).
@@ -102,7 +109,7 @@ These helper methods rely on these classes
 
 (TODO: check if they are part of the MPS base distribution -- they are in our internal distro)
 
-##### org.docx4j
+#### org.docx4j
 
 This solution is a wrapper for the docx4j binaries (MPS @java_stub models)
 found at the [docx4j site](https://www.docx4java.org/trac/docx4j)
@@ -118,7 +125,7 @@ As configured now, it writes to a log file `C:\temp\org.docx4j\samples.log`.
 You may want to change that.
 This [article](http://dslfoundry.com/using-apache-chainsaw-to-view-the-mps-log/) on logging configurations may be hepful.
 
-##### org.docx4j.samples
+#### org.docx4j.samples
 
 This solution contains all source code samples provided by docx4j.
 The samples serve as documetnation,
@@ -139,7 +146,7 @@ but it took a few hours of manual editing, because of a number of issues in past
   (which get transfered automatically in the module/model properties)
 - generic types (the resulting AST is wrong in a very weird way)
 
-This caused many secondary errors, which took a lot of manual work to fix.
+This caused many unresolved references and missing nodes, which took a lot of manual work to fix.
 TODO: file bug reports with JetBrans.
 
 Many samples require one or more files as input.
@@ -166,12 +173,12 @@ This can be done in more than one way:
   so there is only one place to edit if you change your mind about the path.
   As configured now, it points to folder `C:\temp\org.docx4j`
 
-##### org.docx4j.samples
+#### org.docx4j.samples
 
 Ignore.
 This solution contains a few experiments that may be removed later.
 
-##### org.xmlunit
+#### org.xmlunit
 
 This solution is a wrapper for the xmlunit binaries (MPS @java_stub models)
 found at the [xmlunit site](https://www.xmlunit.org/).
@@ -179,7 +186,7 @@ found at the [xmlunit site](https://www.xmlunit.org/).
 Purpose: provide a better matcher for tests that compare actual generator output with expected generator output.
 Status: not in use yet.
 
-##### org.xmlunit.tests
+#### org.xmlunit.tests
 
 For the moment, this solution is a playground to try out xmlunit.
 
