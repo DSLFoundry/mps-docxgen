@@ -274,7 +274,7 @@
         <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
         <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
         <node concept="Xl_RD" id="2QPHU78w22s" role="37wK5m">
-          <property role="Xl_RC" value="D:/git/GitHub/DSLFoundry/mps-docxgen/solutions/com.dslfoundry.docx.samples" />
+          <property role="Xl_RC" value="D:/GitHub/DSLFoundry/mps-docxgen/solutions/com.dslfoundry.docx.samples" />
         </node>
       </node>
     </node>
@@ -312,7 +312,7 @@
         <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
         <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
         <node concept="Xl_RD" id="2QPHU78vMb9" role="37wK5m">
-          <property role="Xl_RC" value="D:/git/GitHub/DSLFoundry/mps-docxgen/solutions/com.dslfoundry.docx.samples.tests" />
+          <property role="Xl_RC" value="D:/GitHub/DSLFoundry/mps-docxgen/solutions/com.dslfoundry.docx.samples.tests" />
         </node>
       </node>
     </node>

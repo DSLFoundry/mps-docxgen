@@ -591,7 +591,7 @@
                     <node concept="liA8E" id="2QPHU78ux9n" role="2OqNvi">
                       <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
                       <node concept="Xl_RD" id="2QPHU78uxyB" role="37wK5m">
-                        <property role="Xl_RC" value="templates" />
+                        <property role="Xl_RC" value="templates.docx" />
                       </node>
                     </node>
                   </node>
