@@ -23,6 +23,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
     <module reference="b5d6b482-6a56-49a4-b0f2-664334ce8729(org.docx4j)" version="0" />
     <module reference="9ef5705e-b8cf-44fa-833b-7ab49c914e46(org.docx4j.samples)" version="0" />
   </dependencyVersions>

@@ -26,10 +26,10 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="cpcb" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:org.docx4j.openpackaging(org.docx4j/)" />
     <import index="1dej" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:org.docx4j.model.table(org.docx4j/)" />
-    <import index="eaz0" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.xml.bind(JDK/)" />
     <import index="vgdk" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:org.docx4j.wml(org.docx4j/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="s1v1" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:org.docx4j.openpackaging.parts.WordprocessingML(org.docx4j/)" />
+    <import index="eaz0" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:javax.xml.bind(org.docx4j/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -2299,7 +2299,7 @@
     <property role="TrG5h" value="BookmarkAdd" />
     <node concept="Wx3nA" id="5DN9oCMqlKa" role="jymVt">
       <property role="TrG5h" value="context" />
-      <node concept="3uibUv" id="5DN9oCMqlKb" role="1tU5fm">
+      <node concept="3uibUv" id="2bnit4qrvRQ" role="1tU5fm">
         <ref role="3uigEE" to="eaz0:~JAXBContext" resolve="JAXBContext" />
       </node>
       <node concept="10M0yZ" id="5DN9oCMqrxK" role="33vP2m">
