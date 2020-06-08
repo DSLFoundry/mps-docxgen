@@ -2,7 +2,7 @@
 <model ref="r:3a449a93-3e9f-43f3-bcfd-d4e6256698c9(com.dslfoundry.docx.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -88,7 +88,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="VechU" id="2QPHU78fGGb" role="3F10Kt">
-          <property role="Vb096" value="gray" />
+          <property role="Vb096" value="fLJRk5_/gray" />
         </node>
       </node>
       <node concept="3F0ifn" id="2QPHU78fsev" role="3EZMnx">
@@ -139,10 +139,10 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="30gYXW" id="2OLty_fnEo6" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
         <node concept="VechU" id="2OLty_fnEoB" role="3F10Kt">
-          <property role="Vb096" value="WHITE" />
+          <property role="Vb096" value="hEZAO13/white" />
         </node>
         <node concept="VPXOz" id="2OLty_fnEo8" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -164,10 +164,10 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="30gYXW" id="2OLty_foaF8" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
         </node>
         <node concept="VechU" id="2OLty_foaF9" role="3F10Kt">
-          <property role="Vb096" value="WHITE" />
+          <property role="Vb096" value="hEZAO13/white" />
         </node>
       </node>
     </node>
@@ -194,7 +194,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="30gYXW" id="4sixqEhgRn8" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
           <node concept="1iSF2X" id="4sixqEhgRn9" role="VblUZ">
             <property role="1iTho6" value="DDFFFF" />
           </node>
@@ -213,7 +213,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="30gYXW" id="4sixqEhgHyY" role="3F10Kt">
-          <property role="Vb096" value="lightGray" />
+          <property role="Vb096" value="fLJRk5A/lightGray" />
           <node concept="1iSF2X" id="4sixqEhgRn5" role="VblUZ">
             <property role="1iTho6" value="DDFFFF" />
           </node>
@@ -286,7 +286,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="VechU" id="2QPHU78fIXu" role="3F10Kt">
-          <property role="Vb096" value="gray" />
+          <property role="Vb096" value="fLJRk5_/gray" />
         </node>
       </node>
     </node>

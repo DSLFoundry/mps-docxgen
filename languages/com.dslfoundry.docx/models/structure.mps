@@ -2,7 +2,7 @@
 <model ref="r:9742a092-2a39-4a23-b1f7-4e446da4d386(com.dslfoundry.docx.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -51,14 +51,14 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2RpYLN7f$Th" role="1TKVEi">
       <property role="IQ2ns" value="3303947902673374801" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="content" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4sixqEheiIX" resolve="DocxParagraphCollection" />
     </node>
     <node concept="1TJgyj" id="2QPHU78fsef" role="1TKVEi">
       <property role="IQ2ns" value="3293740607968494479" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="template" />
       <ref role="20lvS9" node="2QPHU78fsec" resolve="DocxTemplate" />
     </node>
@@ -83,9 +83,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2RpYLN7gnds" role="1TKVEi">
       <property role="IQ2ns" value="3303947902673580892" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="runs" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2RpYLN7gndo" resolve="DocxRun" />
     </node>
     <node concept="1TJgyi" id="2RpYLN7has9" role="1TKVEl">
@@ -104,14 +104,14 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2RpYLN7gndD" role="1TKVEi">
       <property role="IQ2ns" value="3303947902673580905" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="texts" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2RpYLN7gndv" resolve="DocxText" />
     </node>
     <node concept="1TJgyj" id="2RpYLN7hvYl" role="1TKVEi">
       <property role="IQ2ns" value="3303947902673878933" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="props" />
       <ref role="20lvS9" node="2RpYLN7hvXW" resolve="DocxRunProps" />
     </node>
@@ -172,9 +172,9 @@
     </node>
     <node concept="1TJgyj" id="4sixqEheiJ1" role="1TKVEi">
       <property role="IQ2ns" value="5121302693901052865" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="paragraphs" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="4sixqEheiIT" resolve="IDocxParagraphs" />
     </node>
   </node>

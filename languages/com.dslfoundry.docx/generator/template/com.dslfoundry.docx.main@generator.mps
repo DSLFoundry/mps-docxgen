@@ -2,14 +2,12 @@
 <model ref="r:217d64e5-4b6b-4c99-8661-37b1cbcb5c80(com.dslfoundry.docx.main@generator)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
     <import index="hgfn" ref="r:9742a092-2a39-4a23-b1f7-4e446da4d386(com.dslfoundry.docx.structure)" />
     <import index="5uyg" ref="r:a1a3f523-33aa-40b4-8b0b-ee4063f62c2f(com.dslfoundry.docx.behavior)" />
-    <import index="8g1y" ref="r:b4f7d452-ea5a-4798-a286-d903ac28c88f(com.dslfoundry.docx.generator)" />
-    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -41,11 +39,8 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -97,6 +92,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -116,39 +119,169 @@
   </node>
   <node concept="1pmfR0" id="4uRoABxEl00">
     <property role="TrG5h" value="WriteDocxFiles" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <node concept="1pplIY" id="4uRoABxEl01" role="1pqMTA">
       <node concept="3clFbS" id="4uRoABxEl02" role="2VODD2">
         <node concept="2xdQw9" id="3UTNk5Vg9Ml" role="3cqZAp">
-          <property role="2xdLsb" value="info" />
+          <property role="2xdLsb" value="h1akgim/info" />
           <node concept="Xl_RD" id="3UTNk5Vg9Mn" role="9lYJi">
             <property role="Xl_RC" value="Generator:WriteDocxFiles BEGIN" />
           </node>
         </node>
         <node concept="3clFbH" id="2Othy1h7Qwy" role="3cqZAp" />
         <node concept="3SKdUt" id="2QPHU78vlv5" role="3cqZAp">
-          <node concept="3SKdUq" id="2QPHU78vlv7" role="3SKWNk">
-            <property role="3SKdUp" value="We pass originalModel because we derive file paths relative to the original solution." />
+          <node concept="1PaTwC" id="7L$ZRJzotWR" role="3ndbpf">
+            <node concept="3oM_SD" id="7L$ZRJzotWS" role="1PaTwD">
+              <property role="3oM_SC" value="We" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotWT" role="1PaTwD">
+              <property role="3oM_SC" value="pass" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotWU" role="1PaTwD">
+              <property role="3oM_SC" value="originalModel" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotWV" role="1PaTwD">
+              <property role="3oM_SC" value="because" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotWW" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotWX" role="1PaTwD">
+              <property role="3oM_SC" value="derive" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotWY" role="1PaTwD">
+              <property role="3oM_SC" value="file" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotWZ" role="1PaTwD">
+              <property role="3oM_SC" value="paths" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotX0" role="1PaTwD">
+              <property role="3oM_SC" value="relative" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotX1" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotX2" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotX3" role="1PaTwD">
+              <property role="3oM_SC" value="original" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotX4" role="1PaTwD">
+              <property role="3oM_SC" value="solution." />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="2QPHU78vpkp" role="3cqZAp">
-          <node concept="3SKdUq" id="2QPHU78vpkr" role="3SKWNk">
-            <property role="3SKdUp" value="This is relevant in case of 'cascaded generators':" />
+          <node concept="1PaTwC" id="7L$ZRJzotX5" role="3ndbpf">
+            <node concept="3oM_SD" id="7L$ZRJzotX6" role="1PaTwD">
+              <property role="3oM_SC" value="This" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotX7" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotX8" role="1PaTwD">
+              <property role="3oM_SC" value="relevant" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotX9" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXa" role="1PaTwD">
+              <property role="3oM_SC" value="case" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXb" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXc" role="1PaTwD">
+              <property role="3oM_SC" value="'cascaded" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXd" role="1PaTwD">
+              <property role="3oM_SC" value="generators':" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="2QPHU78vu7B" role="3cqZAp">
-          <node concept="3SKdUq" id="2QPHU78vu7C" role="3SKWNk">
-            <property role="3SKdUp" value="when com.dslfoundry.docx used as target, there are two generator steps" />
+          <node concept="1PaTwC" id="7L$ZRJzotXe" role="3ndbpf">
+            <node concept="3oM_SD" id="7L$ZRJzotXf" role="1PaTwD">
+              <property role="3oM_SC" value="when" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXg" role="1PaTwD">
+              <property role="3oM_SC" value="com.dslfoundry.docx" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXh" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXi" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXj" role="1PaTwD">
+              <property role="3oM_SC" value="target," />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXk" role="1PaTwD">
+              <property role="3oM_SC" value="there" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXl" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXm" role="1PaTwD">
+              <property role="3oM_SC" value="two" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXn" role="1PaTwD">
+              <property role="3oM_SC" value="generator" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXo" role="1PaTwD">
+              <property role="3oM_SC" value="steps" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="2QPHU78vvQK" role="3cqZAp">
-          <node concept="3SKdUq" id="2QPHU78vvQM" role="3SKWNk">
-            <property role="3SKdUp" value="1. original model -&gt; com.dslfoundry.docx transient model" />
+          <node concept="1PaTwC" id="7L$ZRJzotXp" role="3ndbpf">
+            <node concept="3oM_SD" id="7L$ZRJzotXq" role="1PaTwD">
+              <property role="3oM_SC" value="1." />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXr" role="1PaTwD">
+              <property role="3oM_SC" value="original" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXs" role="1PaTwD">
+              <property role="3oM_SC" value="model" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXt" role="1PaTwD">
+              <property role="3oM_SC" value="-&gt;" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXu" role="1PaTwD">
+              <property role="3oM_SC" value="com.dslfoundry.docx" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXv" role="1PaTwD">
+              <property role="3oM_SC" value="transient" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXw" role="1PaTwD">
+              <property role="3oM_SC" value="model" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="2QPHU78vyWQ" role="3cqZAp">
-          <node concept="3SKdUq" id="2QPHU78vyWS" role="3SKWNk">
-            <property role="3SKdUp" value="2. com.dlsfoundry.docx transient model -&gt; docx file" />
+          <node concept="1PaTwC" id="7L$ZRJzotXx" role="3ndbpf">
+            <node concept="3oM_SD" id="7L$ZRJzotXy" role="1PaTwD">
+              <property role="3oM_SC" value="2." />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXz" role="1PaTwD">
+              <property role="3oM_SC" value="com.dlsfoundry.docx" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotX$" role="1PaTwD">
+              <property role="3oM_SC" value="transient" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotX_" role="1PaTwD">
+              <property role="3oM_SC" value="model" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXA" role="1PaTwD">
+              <property role="3oM_SC" value="-&gt;" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXB" role="1PaTwD">
+              <property role="3oM_SC" value="docx" />
+            </node>
+            <node concept="3oM_SD" id="7L$ZRJzotXC" role="1PaTwD">
+              <property role="3oM_SC" value="file" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="2RpYLN7eQ4l" role="3cqZAp">
@@ -193,7 +326,7 @@
         </node>
         <node concept="3clFbH" id="2QPHU78fX3Y" role="3cqZAp" />
         <node concept="2xdQw9" id="3UTNk5Vg9WA" role="3cqZAp">
-          <property role="2xdLsb" value="info" />
+          <property role="2xdLsb" value="h1akgim/info" />
           <node concept="Xl_RD" id="3UTNk5Vg9WB" role="9lYJi">
             <property role="Xl_RC" value="Generator:WriteDocxFiles -END-" />
           </node>
