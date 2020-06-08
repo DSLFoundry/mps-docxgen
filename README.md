@@ -21,6 +21,12 @@ You may even add standard content like headers & footers.
 
 #### Status
 
+>>> migrating to MPS 2019.2 fails <<<
+There is a fatal bug in this version of MPS related to java_stub solutions
+This has been solved in MPS 2019.3.4
+>>> migrating to MPS 2019.2 has been abandoned <<<
+
+
 This is very much a work in progress.
 The the set of concepts presently adopted from the WordProcessingML standard is rather small,
 but the ones adopted work pretty well.
