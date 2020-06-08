@@ -21,6 +21,13 @@ You may even add standard content like headers & footers.
 
 #### Status
 
+>>> at this moment there is a jar conflict related to JAXB
+- the samples in org.docx4j.samples all run fine
+- the tests for com.dslfoundry.docx all fail. This is odd because the calls made to org.docx4j that fail here, run fine in the context of the samples.
+
+Assumption: class loading problem. Sta tuned
+
+
 This is very much a work in progress.
 The the set of concepts presently adopted from the WordProcessingML standard is rather small,
 but the ones adopted work pretty well.
@@ -193,10 +200,10 @@ For the moment, this solution is a playground to try out xmlunit.
 ### Version Info
 
 This repository is based on
-- MPS: 2019.1.1
-- docx4j: 8.1.3 -- downloads:
-  [[binaries]](https://docx4java.org/docx4j/archive/docx4j-8.1.3/docx4j-community-8.1.3.zip)
-  [[source code samples]](https://docx4java.org/docx4j/archive/docx4j-8.1.3/docx4j-samples-docx4j-8.1.3.zip)
-  [[JAXB]](https://docx4java.org/docx4j/archive/docx4j-8.1.3/docx4j-JAXB-ReferenceImpl-8.1.3.zip)
+- MPS: 2019.3
+- docx4j: 11.1.3 -- downloads:
+  [[binaries]](https://docx4java.org/docx4j/archive/docx4j-11.1.3/docx4j-community-11.1.3.zip)
+  [[source code samples]](https://docx4java.org/docx4j/archive/docx4j-11.1.3/docx4j-samples-docx4j-11.1.3.zip)
+  [[JAXB]](https://docx4java.org/docx4j/archive/docx4j-11.1.3/docx4j-JAXB-ReferenceImpl-11.1.3.zip)
 - xmlunit: 2.6.3 -- downloads:
   [[binaries]](https://github.com/xmlunit/xmlunit/releases/download/v2.6.3/xmlunit-2.6.3-bin.zip)

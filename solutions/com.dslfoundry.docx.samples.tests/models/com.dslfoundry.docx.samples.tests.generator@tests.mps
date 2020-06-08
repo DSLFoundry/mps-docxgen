@@ -2,7 +2,7 @@
 <model ref="r:fa45aa07-b0a4-4936-828e-8aa9491f3ff0(com.dslfoundry.docx.samples.tests.generator@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7850b982-0ec2-45d4-8e0f-ee23786dc16a" name="com.dslfoundry.docx" version="0" />
   </languages>
@@ -91,7 +91,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="1LJipm$5syH">
-    <property role="2XOHcw" value="${mps-docxgen}" />
+    <property role="2XOHcw" value="${SDC_xSBD}" />
   </node>
 </model>
 

@@ -2,9 +2,9 @@
 <model ref="r:8275cd5a-742e-439d-807d-4c44e43384b0(org.xmlunit.tests.samples@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -79,11 +79,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -102,6 +99,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -137,8 +142,55 @@
             </node>
           </node>
           <node concept="3SKdUt" id="3o10vYBZin" role="3cqZAp">
-            <node concept="3SKdUq" id="3o10vYBZip" role="3SKWNk">
-              <property role="3SKdUp" value="CompareMatcher is a factory, it returns a matcher that needs to be called with instance method" />
+            <node concept="1PaTwC" id="5FAIC$AjBv4" role="3ndbpf">
+              <node concept="3oM_SD" id="5FAIC$AjBv5" role="1PaTwD">
+                <property role="3oM_SC" value="CompareMatcher" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBv6" role="1PaTwD">
+                <property role="3oM_SC" value="is" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBv7" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBv8" role="1PaTwD">
+                <property role="3oM_SC" value="factory," />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBv9" role="1PaTwD">
+                <property role="3oM_SC" value="it" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBva" role="1PaTwD">
+                <property role="3oM_SC" value="returns" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBvb" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBvc" role="1PaTwD">
+                <property role="3oM_SC" value="matcher" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBvd" role="1PaTwD">
+                <property role="3oM_SC" value="that" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBve" role="1PaTwD">
+                <property role="3oM_SC" value="needs" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBvf" role="1PaTwD">
+                <property role="3oM_SC" value="to" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBvg" role="1PaTwD">
+                <property role="3oM_SC" value="be" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBvh" role="1PaTwD">
+                <property role="3oM_SC" value="called" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBvi" role="1PaTwD">
+                <property role="3oM_SC" value="with" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBvj" role="1PaTwD">
+                <property role="3oM_SC" value="instance" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBvk" role="1PaTwD">
+                <property role="3oM_SC" value="method" />
+              </node>
             </node>
           </node>
           <node concept="3clFbF" id="3o10vYBSMR" role="3cqZAp">
@@ -173,8 +225,13 @@
         <node concept="3Tm1VV" id="6ItT4KaXt8O" role="1B3o_S" />
         <node concept="3clFbS" id="6ItT4KaXt8P" role="3clF47">
           <node concept="3SKdUt" id="3o10vYBjZ8" role="3cqZAp">
-            <node concept="3SKdUq" id="3o10vYBjZa" role="3SKWNk">
-              <property role="3SKdUp" value="source: https://github.com/xmlunit/user-guide/wiki/DiffBuilder" />
+            <node concept="1PaTwC" id="5FAIC$AjBvl" role="3ndbpf">
+              <node concept="3oM_SD" id="5FAIC$AjBvm" role="1PaTwD">
+                <property role="3oM_SC" value="source:" />
+              </node>
+              <node concept="3oM_SD" id="5FAIC$AjBvn" role="1PaTwD">
+                <property role="3oM_SC" value="https://github.com/xmlunit/user-guide/wiki/DiffBuilder" />
+              </node>
             </node>
           </node>
           <node concept="3cpWs8" id="2Rlv0MYx58v" role="3cqZAp">
