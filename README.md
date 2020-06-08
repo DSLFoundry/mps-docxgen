@@ -25,7 +25,7 @@ You may even add standard content like headers & footers.
 - the samples in org.docx4j.samples all run fine
 - the tests for com.dslfoundry.docx all fail. This is odd because the calls made to org.docx4j that fail here, run fine in the context of the samples.
 
-Assumption: class loading problem. Stay tuned.
+Assumption: class loading problem. Stay tuned!
 
 
 This is very much a work in progress.
