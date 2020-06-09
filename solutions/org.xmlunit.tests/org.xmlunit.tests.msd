@@ -5,12 +5,6 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
-  <facets>
-    <facet type="java">
-      <classes generated="true" path="${module}/classes_gen" />
-    </facet>
-    <facet type="tests" />
-  </facets>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">c8271b23-b6fe-421a-8a18-978af92cc71c(org.xmlunit)</dependency>

@@ -19,6 +19,7 @@
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">3669929d-7269-4de9-a160-f80b04ef909d(DiffUtils)</dependency>
+    <dependency reexport="false">b5d6b482-6a56-49a4-b0f2-664334ce8729(org.docx4j)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:7850b982-0ec2-45d4-8e0f-ee23786dc16a:com.dslfoundry.docx" version="0" />
@@ -55,6 +56,7 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" version="0" />
+    <module reference="b5d6b482-6a56-49a4-b0f2-664334ce8729(org.docx4j)" version="0" />
   </dependencyVersions>
 </solution>
 

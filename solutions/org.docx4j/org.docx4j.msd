@@ -7,6 +7,18 @@
       <sourceRoot location="docx4j-openxml-objects-pml-11.1.3.jar" />
       <sourceRoot location="docx4j-openxml-objects-sml-11.1.3.jar" />
     </modelRoot>
+    <modelRoot contentPath="${module}/docx4j-community-11.1.3/docx4j-JAXB-ReferenceImpl-11.1.3" type="java_classes">
+      <sourceRoot location="docx4j-JAXB-ReferenceImpl-11.1.3.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/docx4j-community-11.1.3/docx4j-JAXB-ReferenceImpl-11.1.3/dependencies" type="java_classes">
+      <sourceRoot location="FastInfoset-1.2.16.jar" />
+      <sourceRoot location="istack-commons-runtime-3.0.8.jar" />
+      <sourceRoot location="jakarta.activation-api-1.2.1.jar" />
+      <sourceRoot location="jakarta.xml.bind-api-2.3.2.jar" />
+      <sourceRoot location="jaxb-runtime-2.3.2.jar" />
+      <sourceRoot location="stax-ex-1.8.1.jar" />
+      <sourceRoot location="txw2-2.3.2.jar" />
+    </modelRoot>
     <modelRoot contentPath="${module}/docx4j-community-11.1.3/dependencies" type="java_classes">
       <sourceRoot location="antlr-2.7.7.jar" />
       <sourceRoot location="antlr-runtime-3.5.2.jar" />
@@ -24,7 +36,6 @@
       <sourceRoot location="jackson-databind-2.9.9.jar" />
       <sourceRoot location="jaxb-svg11-1.0.2.jar" />
       <sourceRoot location="jcl-over-slf4j-1.7.26.jar" />
-      <sourceRoot location="junit-4.12.jar" />
       <sourceRoot location="mbassador-1.3.2.jar" />
       <sourceRoot location="slf4j-api-1.7.25.jar" />
       <sourceRoot location="slf4j-log4j12-1.7.25.jar" />
@@ -33,18 +44,6 @@
       <sourceRoot location="xalan-interpretive-11.0.0.jar" />
       <sourceRoot location="xalan-serializer-11.0.0.jar" />
       <sourceRoot location="xmlgraphics-commons-2.3.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/docx4j-community-11.1.3/docx4j-JAXB-ReferenceImpl-11.1.3" type="java_classes">
-      <sourceRoot location="docx4j-JAXB-ReferenceImpl-11.1.3.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/docx4j-community-11.1.3/docx4j-JAXB-ReferenceImpl-11.1.3/dependencies" type="java_classes">
-      <sourceRoot location="FastInfoset-1.2.16.jar" />
-      <sourceRoot location="istack-commons-runtime-3.0.8.jar" />
-      <sourceRoot location="jakarta.activation-api-1.2.1.jar" />
-      <sourceRoot location="jakarta.xml.bind-api-2.3.2.jar" />
-      <sourceRoot location="jaxb-runtime-2.3.2.jar" />
-      <sourceRoot location="stax-ex-1.8.1.jar" />
-      <sourceRoot location="txw2-2.3.2.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -73,7 +72,6 @@
     <stubModelEntry path="${module}/docx4j-community-11.1.3/dependencies/jackson-databind-2.9.9.jar" />
     <stubModelEntry path="${module}/docx4j-community-11.1.3/dependencies/jaxb-svg11-1.0.2.jar" />
     <stubModelEntry path="${module}/docx4j-community-11.1.3/dependencies/jcl-over-slf4j-1.7.26.jar" />
-    <stubModelEntry path="${module}/docx4j-community-11.1.3/dependencies/junit-4.12.jar" />
     <stubModelEntry path="${module}/docx4j-community-11.1.3/dependencies/mbassador-1.3.2.jar" />
     <stubModelEntry path="${module}/docx4j-community-11.1.3/dependencies/slf4j-api-1.7.25.jar" />
     <stubModelEntry path="${module}/docx4j-community-11.1.3/dependencies/slf4j-log4j12-1.7.25.jar" />

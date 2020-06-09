@@ -9,11 +9,6 @@
       <sourceRoot location="assertj-core-3.14.0.jar" />
     </modelRoot>
   </models>
-  <facets>
-    <facet type="java">
-      <classes generated="true" path="${module}/classes_gen" />
-    </facet>
-  </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/xmlunit-2.6.3/xmlunit-assertj-2.6.3.jar" />
     <stubModelEntry path="${module}/xmlunit-2.6.3/xmlunit-core-2.6.3.jar" />
