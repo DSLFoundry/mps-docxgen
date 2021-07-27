@@ -1,5 +1,37 @@
 # mps-docxgen
 
+## Status
+
+This project is no longer under development.
+
+It served its purpose as a proof-of-concept. Main conclusions:
+- the approach to use docx4j definitely works.
+It is a stable library with plenty of examples.
+It allows fine-grained and full control over all features of the .docx format,
+provided that you spend time learning the gory details of said format.
+- the MPS target language in this repo does not try to hide the details,
+it only presents them somewhat visually using the MSP editor aspect.
+This makes for an acceptable generator target language.
+- the hard part was figuring out how to deal with duplicate jars:
+jars that are both part of the docx4j distribution and of the MPS installation.
+We managed by trial and error, with limited understanding of all the class-loading magic that MPS does.
+However, after each MPS migration this had to be redone, as JetBrains changed the jars that come with MPS.
+
+### Why did we stop further development?
+
+It became clear that for our overarching project we needed multiple output formats, including html/css.
+At the same time we discovered that we did not need that many of the .docx concepts after all.
+This made it less attractive to build and maintain a dedicated .docx generator.
+
+The approach we now take is to write in markdown and use pandoc to generate the final output format.
+This is now in production.
+
+Another approach we are considering is using a static site builder like Hugo,
+focussing primarily on a good website, and on .pdf output secondarily.
+This is now a proof of concept.
+
+# Original Read-Me
+
 This project provides a generation target language named `com.dslfoundry.docx` for generating .docx files from an MPS model.
 It is based on the good work from the [docx4j project](https://docx4java.org/).
 
@@ -10,6 +42,9 @@ There are multiple sources, for example
 or [Apache](https://wiki.openoffice.org/wiki/OOXML/WordProcessingML)
 or [ISO/IEC](https://www.iso.org/standard/71691.html)
 
+The the set of concepts presently adopted from the WordProcessingML standard is rather small,
+but the ones adopted work pretty well.
+
 The com.dslfoundry.docx language includes custom editors that should make life somehwat more easy
 when defining templates and reduction rules.
 You find examples in the c.d.docx.samples solution.
@@ -19,22 +54,14 @@ For each generator run, the template document is copied and filled with the outp
 In this way you can create styles and set document properties without coding.
 You may even add standard content like headers & footers.
 
-#### Status
+#### open issue
 
 >>> at this moment there is a jar conflict related to JAXB
 - the samples in org.docx4j.samples all run fine
 - the tests for com.dslfoundry.docx all fail. This is odd because the calls made to org.docx4j that fail here, run fine in the context of the samples.
 
-Assumption: class loading problem. Stay tuned!
-
-
-This is very much a work in progress.
-The the set of concepts presently adopted from the WordProcessingML standard is rather small,
-but the ones adopted work pretty well.
-It is not the intention to provide each and every piece of functionality of the standard in this language.
-Development is "on demand", implementing only what is needed for client projects.
-Contributions welcome!
-
+Assumption: class loading problem.
+This was not an issue before migrating to 2019.3.4
 
 ## Usage
 
