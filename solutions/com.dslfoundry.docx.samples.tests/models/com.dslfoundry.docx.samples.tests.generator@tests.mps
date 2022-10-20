@@ -91,7 +91,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="1LJipm$5syH">
-    <property role="2XOHcw" value="${SDC_xSBD}" />
+    <property role="2XOHcw" value="${mps-docxgen}" />
   </node>
 </model>
 
