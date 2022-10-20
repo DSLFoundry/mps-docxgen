@@ -29,7 +29,7 @@
     <import index="vgdk" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:org.docx4j.wml(org.docx4j/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="s1v1" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:org.docx4j.openpackaging.parts.WordprocessingML(org.docx4j/)" />
-    <import index="eaz0" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:javax.xml.bind(org.docx4j/)" />
+    <import index="ifn4" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:jakarta.xml.bind(org.docx4j/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -2648,7 +2648,7 @@
     <node concept="Wx3nA" id="5DN9oCMqlKa" role="jymVt">
       <property role="TrG5h" value="context" />
       <node concept="3uibUv" id="7L$ZRJznJY4" role="1tU5fm">
-        <ref role="3uigEE" to="eaz0:~JAXBContext" resolve="JAXBContext" />
+        <ref role="3uigEE" to="ifn4:~JAXBContext" resolve="JAXBContext" />
       </node>
       <node concept="10M0yZ" id="5DN9oCMqrxK" role="33vP2m">
         <ref role="3cqZAo" to="qibz:~Context.jc" resolve="jc" />
@@ -3227,7 +3227,7 @@
           <node concept="3cpWsn" id="5DN9oCMqlMy" role="3cpWs9">
             <property role="TrG5h" value="bmEnd" />
             <node concept="3uibUv" id="5DN9oCMqlM$" role="1tU5fm">
-              <ref role="3uigEE" to="eaz0:~JAXBElement" resolve="JAXBElement" />
+              <ref role="3uigEE" to="ifn4:~JAXBElement" resolve="JAXBElement" />
               <node concept="3uibUv" id="5DN9oCMqlM_" role="11_B2D">
                 <ref role="3uigEE" to="vgdk:~CTMarkupRange" resolve="CTMarkupRange" />
               </node>
@@ -3330,7 +3330,7 @@
           <node concept="3cpWsn" id="5DN9oCMqlMU" role="3cpWs9">
             <property role="TrG5h" value="bmStart" />
             <node concept="3uibUv" id="5DN9oCMqlMW" role="1tU5fm">
-              <ref role="3uigEE" to="eaz0:~JAXBElement" resolve="JAXBElement" />
+              <ref role="3uigEE" to="ifn4:~JAXBElement" resolve="JAXBElement" />
               <node concept="3uibUv" id="5DN9oCMqlMX" role="11_B2D">
                 <ref role="3uigEE" to="vgdk:~CTBookmark" resolve="CTBookmark" />
               </node>
@@ -3818,7 +3818,7 @@
         <node concept="3clFbF" id="5DN9oCMtISl" role="3cqZAp">
           <node concept="2YIFZM" id="5DN9oCMtQfB" role="3clFbG">
             <ref role="1Pybhc" to="e91c:~Docx4J" resolve="Docx4J" />
-            <ref role="37wK5l" to="e91c:~Docx4J.save(org.docx4j.openpackaging.packages.WordprocessingMLPackage,java.io.File)" resolve="save" />
+            <ref role="37wK5l" to="e91c:~Docx4J.save(org.docx4j.openpackaging.packages.OpcPackage,java.io.File)" resolve="save" />
             <node concept="37vLTw" id="5DN9oCMtQfC" role="37wK5m">
               <ref role="3cqZAo" node="5DN9oCMtIRQ" resolve="wordMLPackage" />
             </node>
@@ -4425,7 +4425,7 @@
                 <ref role="3cqZAo" node="5DN9oCMtIUJ" resolve="imagePart" />
               </node>
               <node concept="liA8E" id="5DN9oCMtLmZ" role="2OqNvi">
-                <ref role="37wK5l" to="s1v1:~BinaryPartAbstractImage.createImageInline(java.lang.String,java.lang.String,int,int,boolean)" resolve="createImageInline" />
+                <ref role="37wK5l" to="s1v1:~BinaryPartAbstractImage.createImageInline(java.lang.String,java.lang.String,long,int,boolean)" resolve="createImageInline" />
                 <node concept="37vLTw" id="5DN9oCMtLn0" role="37wK5m">
                   <ref role="3cqZAo" node="5DN9oCMtIU_" resolve="filenameHint" />
                 </node>

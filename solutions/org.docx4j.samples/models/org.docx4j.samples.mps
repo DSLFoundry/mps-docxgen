@@ -72,10 +72,8 @@
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="fs0v" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:org.docx4j.docProps.core.dc.elements(org.docx4j/)" />
-    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="ifn4" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:jakarta.xml.bind(org.docx4j/)" />
     <import index="4xkr" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:org.docx4j.model(org.docx4j/)" />
-    <import index="8u8u" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:org.apache.http(MPS.IDEA/)" />
     <import index="karu" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:org.xml.sax(org.docx4j/)" />
     <import index="lhjm" ref="b5d6b482-6a56-49a4-b0f2-664334ce8729/java:org.w3c.dom(org.docx4j/)" />
   </imports>
