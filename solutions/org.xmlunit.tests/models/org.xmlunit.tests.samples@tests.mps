@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -80,7 +80,7 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -102,10 +102,10 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -142,7 +142,7 @@
             </node>
           </node>
           <node concept="3SKdUt" id="3o10vYBZin" role="3cqZAp">
-            <node concept="1PaTwC" id="5FAIC$AjBv4" role="3ndbpf">
+            <node concept="1PaTwC" id="5FAIC$AjBv4" role="1aUNEU">
               <node concept="3oM_SD" id="5FAIC$AjBv5" role="1PaTwD">
                 <property role="3oM_SC" value="CompareMatcher" />
               </node>
@@ -225,7 +225,7 @@
         <node concept="3Tm1VV" id="6ItT4KaXt8O" role="1B3o_S" />
         <node concept="3clFbS" id="6ItT4KaXt8P" role="3clF47">
           <node concept="3SKdUt" id="3o10vYBjZ8" role="3cqZAp">
-            <node concept="1PaTwC" id="5FAIC$AjBvl" role="3ndbpf">
+            <node concept="1PaTwC" id="5FAIC$AjBvl" role="1aUNEU">
               <node concept="3oM_SD" id="5FAIC$AjBvm" role="1PaTwD">
                 <property role="3oM_SC" value="source:" />
               </node>
